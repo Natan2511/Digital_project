@@ -1,5 +1,5 @@
 .footer{
-    background: #2C2C2C;
+    background: var(--very-gray);
         &__logo{
             @media screen and (max-width:768px) {
                 margin-bottom: 20px;
@@ -19,7 +19,7 @@
         }
         &>hr{
             stroke-width: 1px;
-            stroke: #fff;
+            stroke: var(--white);
             opacity: 0.1
         }
         &>p{
@@ -37,27 +37,16 @@
         &__info {
             display: flex;
             flex-direction: column;
-                &>h6{
-                    color: #FFF;
-                    font-size: 16px;
-                    font-weight: 900;
-                    line-height: normal;
-                    margin-bottom: 25px;
-                        @media screen and (max-width:1198px) {
-                            margin-bottom: 15px;
-                            text-decoration: underline;
-                        }
-                }
                 &--list {
                     display: flex;
                     flex-direction: column;
                     gap: 16px;  
-                    
+		            margin-top: 25px;
                 }
 
                 &__list--link {
                     &>a {
-                        color: #FFF;
+                        color: var(--white);
                         font-weight: 500;
                         line-height: 24px;
                         letter-spacing: 0.42px;
@@ -73,22 +62,12 @@
         &__contacts {
             display: flex;
             flex-direction: column;
-                &>h6{
-                    color: #FFF;
-                    font-size: 16px;
-                    font-weight: 900;
-                    line-height: normal;
-                    margin-bottom: 25px;
-                        @media screen and (max-width:1198px) {
-                            margin-bottom: 15px;
-                            text-decoration: underline;
-                        }
-                }
                 &--list {
                     display: flex;
                     flex-direction: column;
                     gap: 33px;
                     text-align: center;
+                    margin-top: 25px;
                 }    
                 &__list--link {
                     &>a{
@@ -96,7 +75,7 @@
                         align-items: center;
                         gap: 15px;
 
-                        color: #FFF;
+                        color: var(--white);
                         font-size: 14px;
                         font-weight: 500;
                         line-height: 24px;
@@ -115,20 +94,10 @@
         &__soc {
             display: flex;
             flex-direction: column;
-                &>h6{
-                    color: #FFF;
-                    font-size: 16px;
-                    font-weight: 900;
-                    line-height: normal;
-                    margin-bottom: 25px;
-                        @media screen and (max-width:768px) {
-                            margin-bottom: 15px;
-                            text-decoration: underline;
-                        }
-                }
                 &--list {
                     display: flex;
                     gap: 40px;
+                    margin-top: 25px;
                 }
                 @media screen and (max-width:1198px) {
                     align-items: center;
