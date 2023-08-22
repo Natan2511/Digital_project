@@ -1,0 +1,141 @@
+.footer{
+    background: #2C2C2C;
+        &__logo{
+            @media screen and (max-width:768px) {
+                margin-bottom: 20px;
+            }
+        }
+        &__wrapper{
+            padding:60px 0;
+            margin-bottom: 0;
+
+            display: flex;
+            justify-content: space-between;
+                @media screen and (max-width:1198px) {
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 35px;
+                }
+        }
+        &>hr{
+            stroke-width: 1px;
+            stroke: #fff;
+            opacity: 0.1
+        }
+        &>p{
+            width: 100%;
+            text-align: center;
+            padding: 24px 0 24px 0;
+
+            color: rgba(200, 200, 200, 0.50);
+            font-family: Open Sans;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 22px;
+        }
+        &__info {
+            display: flex;
+            flex-direction: column;
+                &>h6{
+                    color: #FFF;
+                    font-size: 16px;
+                    font-weight: 900;
+                    line-height: normal;
+                    margin-bottom: 25px;
+                        @media screen and (max-width:1198px) {
+                            margin-bottom: 15px;
+                            text-decoration: underline;
+                        }
+                }
+                &--list {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 16px;  
+                    
+                }
+
+                &__list--link {
+                    &>a {
+                        color: #FFF;
+                        font-weight: 500;
+                        line-height: 24px;
+                        letter-spacing: 0.42px;
+                            @media screen and (max-width:768px) {
+                                font-size: 10px;
+                            }
+                    }
+                    @media screen and (max-width:1198px) {
+                        text-align: center;
+                    }
+                }    
+        }
+        &__contacts {
+            display: flex;
+            flex-direction: column;
+                &>h6{
+                    color: #FFF;
+                    font-size: 16px;
+                    font-weight: 900;
+                    line-height: normal;
+                    margin-bottom: 25px;
+                        @media screen and (max-width:1198px) {
+                            margin-bottom: 15px;
+                            text-decoration: underline;
+                        }
+                }
+                &--list {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 33px;
+                    text-align: center;
+                }    
+                &__list--link {
+                    &>a{
+                        display: flex;
+                        align-items: center;
+                        gap: 15px;
+
+                        color: #FFF;
+                        font-size: 14px;
+                        font-weight: 500;
+                        line-height: 24px;
+                        letter-spacing: 0.42px;
+                            @media screen and (max-width:1198px) {
+                                justify-content: center;
+                                gap: 10px;
+                                font-size: 10px;
+                            }
+                    }
+                }
+                    @media screen and (max-width:1198px) {
+                        align-items: center;
+                    }
+        }
+        &__soc {
+            display: flex;
+            flex-direction: column;
+                &>h6{
+                    color: #FFF;
+                    font-size: 16px;
+                    font-weight: 900;
+                    line-height: normal;
+                    margin-bottom: 25px;
+                        @media screen and (max-width:768px) {
+                            margin-bottom: 15px;
+                            text-decoration: underline;
+                        }
+                }
+                &--list {
+                    display: flex;
+                    gap: 40px;
+                }
+                @media screen and (max-width:1198px) {
+                    align-items: center;
+                }
+        }        
+}
+
+@media screen and (max-width:768px) {}
+
+@media screen and (min-width: 768px)and (max-width:1198px) {}

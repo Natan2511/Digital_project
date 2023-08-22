@@ -1,0 +1,80 @@
+.contacts {
+    &__wrapper {
+        margin-top: 22px;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+        & li:last-child{
+            max-height: 369px;
+        }
+        &--link>img{
+            height: 100%;
+        }
+            @media screen and (max-width:768px) {
+                flex-direction: column-reverse;
+                align-items: center;
+            }
+    
+            @media screen and (min-width: 768px)and (max-width:1198px) {
+                flex-direction: column-reverse;
+                align-items: center;
+            }
+    }
+    &__form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        &--input{
+            padding-left: 21px;
+            max-width: 391px;
+            height: 46px;
+            background: var(--very-light-gray2);
+            border: 0;
+                @media screen and (max-width:1198px) {
+                    width: 100%;
+                }
+        }
+        &--star{
+            padding-left: 21px;
+            max-width: 391px;
+            height: 46px;
+            background: var(--very-light-gray2);
+            border: 0;
+        }
+        &>textarea{
+            padding-left: 21px;
+            padding: 14px 0 0 21px;
+            border: 0;
+            background: var(--very-light-gray2);
+            max-width: 391px;
+            resize:none;
+                @media screen and (max-width:1198px) {
+                    width: 100%;
+                }
+        }   
+        &>p{
+            max-width: 331px;
+            margin: 22px 0 21px 40px;
+            color: var(--very-dark-gray);
+            font-size: 14px;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 0.42px;
+            @media screen and (max-width:1198px) {
+                margin: 22px 0 21px 0;
+                text-align: center;
+                font-size: 12px;
+            }
+        }
+        &>button{
+            color: var(--white);
+            background: var(--very-dark-gray);
+        }
+            @media screen and (max-width:1198px) {
+                align-items: center;
+            }
+    }
+}

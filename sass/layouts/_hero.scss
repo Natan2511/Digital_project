@@ -1,0 +1,109 @@
+.hero{
+    display: flex;
+    justify-content: space-between;
+    @media screen and (max-width:768px) {
+        flex-direction: column;
+    }
+    @media screen and (min-width: 768px)and (max-width:1198px) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &__content{
+    display: flex;
+    flex-direction: column;
+    gap: 90px;
+    justify-content: center;
+    @media screen and (max-width:768px) {
+        align-items: center;
+        margin-bottom: 100px;
+        text-align: center;
+    }
+    @media screen and (min-width: 768px)and (max-width:1198px) {
+        align-items: center;
+        margin-bottom: 100px;
+        text-align: center;
+    }
+
+
+        &--title h3:first-child{
+            color: var(--gray);
+            font-size: 64px;
+            font-weight: 300;
+            line-height: 64px;
+                @media screen and (max-width:768px) {
+                    font-size: 44px;
+                    line-height: 44px;
+                }
+                
+                @media screen and (min-width: 768px)and (max-width:1198px) {
+                    font-size: 54px;
+                    font-weight: 300;
+                    line-height: 54px;
+                }
+        }
+        & h3:last-child{
+            color: var(--very-dark-gray);
+            font-size: 64px;
+            font-weight: 700;
+            line-height: 64px;
+                @media screen and (max-width:768px) {
+                    font-size: 44px;
+                    line-height: 44px;
+                }
+                @media screen and (min-width: 768px)and (max-width:1198px) {
+                    font-size: 54px;
+                    line-height: 54px;
+                }
+        }
+        &--btn{
+            display: flex;
+            gap: 23px;
+                &>button{
+                width: 53px;
+                height: 53px;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                border: 1px solid var(--very-light-gray);
+                background: var(--white);
+            } 
+            & button:last-child {
+            background: var(--mostly-white);
+            }
+        }
+        
+        &--num{
+            color: var(--gray);
+            display: flex;
+            gap: 26px;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 24px;
+        }
+    }
+    
+    &__image{
+        position: relative;
+        &>button{
+        gap: 12px;
+        background: #FFF;
+        position: absolute;
+        bottom: 0;
+
+        color: var(--very-dark-gray);
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 12px;
+
+        letter-spacing: 2.4px;
+            @media screen and (max-width:1198px) {
+                width: 180px;
+                height: 61px;
+                font-size: 10px;
+            }
+        }
+    }
+}

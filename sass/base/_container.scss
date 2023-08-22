@@ -1,0 +1,15 @@
+.container {
+	// ===== Mobile screem 480px =====
+	@media screen and (min-width: 425px) {
+		margin: 0 30px 30px 30px;
+	}
+	// ===== Tablet screen 768px =====
+	@media screen and (min-width: 768px) {
+		margin: 0 60px 60px 60px;
+	}
+
+	// ===== Desctop screen 1200px =====
+	@media screen and (min-width: 1200px) {
+		margin: 0 135px 120px 135px;
+	}
+}
